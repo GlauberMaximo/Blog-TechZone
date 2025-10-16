@@ -31,12 +31,12 @@ Ele foi desenvolvido por um grupo de 4 participantes como projeto colaborativo, 
 
 ## Equipe
 
-| Nome | Função |
-|------|--------|
-| César Augusto - https://github.com/Cesar0208 | Desenvolvimento Front-end |
-| Participante 2 | Desenvolvimento Front-end |
-| Participante 3 | Designer e UI/UX |
-| Participante 4 | Conteúdo e revisão |
+| Nome |
+|------|
+| César Augusto - https://github.com/Cesar0208 |
+| Glauber Máximo - https://github.com/GlauberMaximo |
+| João Vitor - https://github.com/joao2740 |
+| Pedro Matos - https://github.com/PMDL-0310 |
 
 > Todos os membros colaboraram igualmente no desenvolvimento do projeto.
 

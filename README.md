@@ -43,7 +43,3 @@ Ele foi desenvolvido por um grupo de 4 participantes como projeto colaborativo, 
 ---
 
 ## Como Executar
-
-1. Clone o repositório:  
-```bash
-git clone https://github.com/seu-usuario/techzone.git

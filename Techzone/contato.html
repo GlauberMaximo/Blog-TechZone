@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechZone | Inovação e Conhecimento</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contatostyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>TechZone</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Games</a></li>
+                    <li><a href="#">Tecnologia</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção de Contato -->
+<section class="contact-section">
+    <div class="container">
+        <div class="contact-header">
+            <h2>Fale Conosco</h2>
+            <p class="post-meta">Tem uma ideia, sugestão ou quer colaborar? Envie uma mensagem.</p>
+        </div>
+
+        <div class="contact-grid">
+            <!-- Informações de Contato -->
+            <div class="contact-info widget">
+                <h4>Informações</h4>
+                <div class="info-item">
+                    <p><strong>Endereço:</strong><br>Av. Exemplo, 123 — Brasília, Brasil</p>
+                </div>
+                <div class="info-item">
+                    <p><strong>Telefone:</strong><br>+55 (61) 91234-5678</p>
+                </div>
+                <div class="info-item">
+                    <p><strong>E-mail:</strong><br>contato@techzone.com</p>
+                </div>
+
+                <h4 style="margin-top:18px;">Horário</h4>
+                <p class="post-meta">Seg — Sex: 9:00 — 18:00</p>
+            </div>
+
+            <!-- Formulário de Contato -->
+            <div class="contact-form widget">
+                <h4>Envie uma mensagem</h4>
+
+                <form id="contactForm" novalidate>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nome">Nome</label>
+                            <input id="nome" name="nome" type="text" placeholder="Seu nome" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input id="email" name="email" type="email" placeholder="seu@exemplo.com" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="assunto">Assunto</label>
+                        <input id="assunto" name="assunto" type="text" placeholder="Assunto da mensagem">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="6" placeholder="Escreva sua mensagem..." required></textarea>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn-submit">Enviar Mensagem</button>
+                        <p class="form-note post-meta">Responderemos em até 48 horas úteis.</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 TechZone. Todos os direitos reservados. | Desenvolvido com Inovação.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

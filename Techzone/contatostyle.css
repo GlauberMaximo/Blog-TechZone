@@ -1,0 +1,168 @@
+/* ---------- Aba de Contato ---------- */
+.contact-section {
+    padding: 80px 0;
+    margin-top: 30px;
+}
+
+.contact-header{
+    text-align: center;
+}
+.contact-header h2 {
+    color: var(--color-primary);
+    font-size: 1.6rem;
+    margin-bottom: 6px;
+}
+
+.contact-header .post-meta {
+    color: var(--color-meta);
+    margin-bottom: 24px;
+}
+
+/* Grid: informações + formulário */
+.contact-grid {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+
+/* Ajusta widgets já definidos para ficarem consistentes */
+.contact-info, .contact-form {
+    background-color: var(--color-text-light);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+
+/* Larguras relativas (integra com seu layout principal) */
+.contact-info {
+    flex: 1;
+    min-width: 260px;
+    border-left: 5px solid var(--color-primary);
+}
+
+.contact-form {
+    flex: 2;
+    border-left: 5px solid var(--color-secondary);
+}
+
+/* Informações */
+.contact-info h4 {
+    color: var(--color-primary);
+    margin-bottom: 12px;
+}
+
+.info-item {
+    margin-bottom: 12px;
+    color: var(--color-text-base);
+    font-size: 0.95rem;
+}
+
+/* Formulário */
+form label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    color: var(--color-text-base);
+    background-color: #fff;
+    transition: border-color 0.2s, box-shadow 0.15s;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--color-secondary);
+    box-shadow: 0 0 0 4px rgba(15,252,190,0.06);
+}
+
+/* Linhas do formulário (duas colunas em desktop) */
+.form-row {
+    display: flex;
+    gap: 16px;
+}
+
+.form-group {
+    flex: 1;
+    margin-bottom: 12px;
+}
+
+/* Ações do formulário */
+.form-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 8px;
+    flex-wrap: wrap;
+}
+
+.btn-submit {
+    padding: 10px 18px;
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.08s;
+}
+
+.btn-submit:hover {
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+    transform: translateY(-1px);
+}
+
+/* Nota pequena abaixo do botão */
+.form-note {
+    margin: 0;
+    font-size: 0.85rem;
+    color: var(--color-meta);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .contact-grid {
+        flex-direction: column;
+    }
+    .form-row {
+        flex-direction: column;
+    }
+    .contact-info {
+        min-width: 100%;
+    }
+    
+    .contact-form {
+        min-width: 100%;
+    }
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Faz o conteúdo principal ocupar o espaço disponível */
+main, .content-area {
+    flex: 1;
+}
+
+/* Garante que o footer fique no fim */
+footer {
+    margin-top: auto;
+}

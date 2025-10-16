@@ -4,68 +4,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Tech | Inovação e Conhecimento</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <header>
+        <div class="side-menu">
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#">Tecnologia</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </div>
         <div class="container">
             <h1>Blog Tech</h1>
-            <nav>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            <nav class="nav-menu">
                 <ul>
                     <li><a href="#">Início</a></li>
+                    <li><a href="#">Games</a></li>
                     <li><a href="#">Tecnologia</a></li>
-                    <li><a href="#">Inovação</a></li>
-                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main class="container content-area">
-        <section class="main-content">
-            <article class="blog-post featured">
-                <h2>O Futuro da Inteligência Artificial em 2024</h2>
-                <p class="post-meta">Por **[Seu Nome]** | 15 de Outubro, 2025</p>
-                <p>A IA está remodelando indústrias. Exploramos as tendências e o que esperar do aprendizado de máquina e da automação nos próximos anos...</p>
-                <a href="#" class="read-more">Leia Mais &rarr;</a>
-            </article>
+    <main class="container">
 
-            <article class="blog-post">
-                <h3>Review: Novo Gadget Essencial para Produtividade</h3>
-                <p class="post-meta">Por **[Seu Nome]** | 10 de Outubro, 2025</p>
-                <p>Analisamos o mais recente dispositivo que promete turbinar sua eficiência diária. Vale o investimento?</p>
-                <a href="#" class="read-more">Leia Mais &rarr;</a>
-            </article>
+        <!-- Carousel Corrigido -->
+        <section class="carousel-container">
+            <section class="carousel" aria-label="Gallery">
+                <ol class="carousel__viewport">
+                  <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+                    <div class="carousel__snapper">
+                      <img src="https://static.vecteezy.com/ti/vetor-gratis/p1/677302-fundo-de-banner-abstrato-tecnologia-gratis-vetor.jpg" alt="">
 
+                      <a href="#carousel__slide4" class="carousel__prev">Go to last slide</a>
+                      <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
+                    </div>
+                  </li>
+                  <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+                    <div class="carousel__snapper">
+                        <img src="https://img.freepik.com/vetores-gratis/banner-de-tecnologia-com-linhas-de-perspectiva-brilhantes_1017-39237.jpg" alt="">
+                        <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
+                        <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
+                    </div>
+                  </li>
+                  <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+                    <div class="carousel__snapper">
+                        <img src="https://static.vecteezy.com/ti/vetor-gratis/p1/382314-fundo-de-modelo-de-banner-abstrato-tecnologia-gratis-vetor.jpg" alt="">
+                        <a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a>
+                        <a href="#carousel__slide4" class="carousel__next">Go to next slide</a>
+                    </div>
+                  </li>
+                  <li id="carousel__slide4" tabindex="0" class="carousel__slide">
+                    
+                    <div class="carousel__snapper">
+                        <img src="https://img.freepik.com/vetores-premium/projeto-de-banner-de-conexao-de-tecnologia-futurista_1055-8032.jpg" alt="">
+                        <a href="#carousel__slide3" class="carousel__prev">Go to previous slide</a>
+                        <a href="#carousel__slide1" class="carousel__next">Go to first slide</a>
+                    </div>
+                  </li>
+                </ol>
+                <aside class="carousel__navigation">
+                  <ol class="carousel__navigation-list">
+                    <li class="carousel__navigation-item">
+                      <a href="#carousel__slide1" class="carousel__navigation-button">Go to slide 1</a>
+                    </li>
+                    <li class="carousel__navigation-item">
+                      <a href="#carousel__slide2" class="carousel__navigation-button">Go to slide 2</a>
+                    </li>
+                    <li class="carousel__navigation-item">
+                      <a href="#carousel__slide3" class="carousel__navigation-button">Go to slide 3</a>
+                    </li>
+                    <li class="carousel__navigation-item">
+                      <a href="#carousel__slide4" class="carousel__navigation-button">Go to slide 4</a>
+                    </li>
+                  </ol>
+                </aside>
+              </section>
+        </section>
+
+        <div class="content-area">
+            <section class="main-content">
+                <article class="blog-post featured">
+                    <h2>O Futuro da Inteligência Artificial em 2024</h2>
+                    <p class="post-meta">Por **[Seu Nome]** | 15 de Outubro, 2025</p>
+                    <p>A IA está remodelando indústrias. Exploramos as tendências e o que esperar do aprendizado de máquina e da automação nos próximos anos...</p>
+                    <a href="#" class="read-more">Leia Mais &rarr;</a>
+                </article>
+
+                <article class="blog-post">
+                    <h3>Review: Novo Gadget Essencial para Produtividade</h3>
+                    <p class="post-meta">Por **[Seu Nome]** | 10 de Outubro, 2025</p>
+                    <p>Analisamos o mais recente dispositivo que promete turbinar sua eficiência diária. Vale o investimento?</p>
+                    <a href="#" class="read-more">Leia Mais &rarr;</a>
+                </article>
             </section>
 
-        <aside class="sidebar">
-            <div class="widget categories">
-                <h4>Categorias</h4>
-                <ul>
-                    <li><a href="#">Desenvolvimento</a></li>
-                    <li><a href="#">Cibersegurança</a></li>
-                    <li><a href="#">Startups</a></li>
-                    <li><a href="#">Hardware</a></li>
-                </ul>
-            </div>
+            <aside class="sidebar">
+                <div class="widget categories">
+                    <h4>Categorias</h4>
+                    <ul>
+                        <li><a href="#">Tecnologia</a></li>
+                        <li><a href="#">Games</a></li>
+                    </ul>
+                </div>
 
-            <div class="widget newsletter">
-                <h4>Assine a Newsletter</h4>
-                <p>Receba as últimas novidades em sua caixa de entrada.</p>
-                <form>
-                    <input type="email" placeholder="Seu e-mail" required>
-                    <button type="submit">Assinar</button>
-                </form>
-            </div>
-        </aside>
+                <div class="widget newsletter">
+                    <h4>Assine a Newsletter</h4>
+                    <p>Receba as últimas novidades em sua caixa de entrada.</p>
+                    <form>
+                        <input type="email" placeholder="Seu e-mail" required>
+                        <button type="submit">Assinar</button>
+                    </form>
+                </div>
+            </aside>
+        </div>
     </main>
-
-    <div class="divTeste">
-
-    </div>
 
     <footer>
         <div class="container">
